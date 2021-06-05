@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_global"
+    tools:context=".ui.HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_pannel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_panel"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/homeLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_timepass"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:background="#E7E7E7"
+            android:orientation="vertical"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeLogo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view11"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    style="@style/boardstyle" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    style="@style/boardstyle" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view13"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    style="@style/boardstyle" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view21"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="@drawable/ripple_effect"
+                    android:scaleType="centerInside"
+                    app:lottie_autoPlay="true" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view22"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="@drawable/ripple_effect"
+                    android:scaleType="centerInside"
+                    app:lottie_autoPlay="true" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view23"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="@drawable/ripple_effect"
+                    android:scaleType="centerInside"
+                    app:lottie_autoPlay="true" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view31"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="@drawable/ripple_effect"
+                    android:scaleType="centerInside"
+                    app:lottie_autoPlay="true" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view32"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="@drawable/ripple_effect"
+                    android:scaleType="centerInside"
+                    app:lottie_autoPlay="true" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view33"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="@drawable/ripple_effect"
+                    android:scaleType="centerInside"
+                    app:lottie_autoPlay="true" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageButton
+
+                android:id="@+id/btnShareApp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:foreground="@drawable/ripple_effect_white_mask"
+                android:src="@drawable/ic_baseline_mobile_screen_share_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageButton
+                android:id="@+id/btnGameSettings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:foreground="@drawable/ripple_effect_white_mask"
+                android:src="@drawable/ic_settings" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageButton
+                android:id="@+id/btnRemoveAds"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:foreground="@drawable/ripple_effect_white_mask"
+                android:src="@drawable/ic_remove_ads" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageButton
+                android:id="@+id/btnInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:foreground="@drawable/ripple_effect_white_mask"
+                android:src="@drawable/ic_info" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect_white_mask">
+
+            <ImageButton
+                android:id="@+id/btnRateUs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:foreground="@drawable/ripple_effect_white_mask"
+                android:src="@drawable/ic_rate" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
